@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .has-sub:hover > ul, .has-sub ul:hover {
+    display: block;
+} */
+ .has-sub .group-hover\:block {
+    display:none;
+ }
+ .has-sub:hover .group-hover\:block {
+    display:block;
+ }
+
+ #carousel > div {
+   z-index: 1;
+   transition: opacity 0.7s ease, pointer-events 0.7s ease;
+ }
+ 
+ #carousel > div[data-visible="true"] {
+   opacity: 1;
+   pointer-events: auto; /* Ensure interactable */
+ }
+ 
+ #carousel > div[data-visible="false"] {
+   opacity: 0;
+   pointer-events: none; /* Disable interactions */
+ }
+ 
