@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .has-sub:hover > ul, .has-sub ul:hover {
-    display: block;
-} */
+
  .has-sub .group-hover\:block {
     display:none;
  }
@@ -27,3 +25,4 @@
    pointer-events: none; /* Disable interactions */
  }
  
+
